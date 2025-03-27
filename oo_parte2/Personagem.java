@@ -7,7 +7,7 @@ public class Personagem {
     private int energia;
     private int fome;
     private int sono;
-
+    
     public Personagem(){
         nome = obterNomeAleatorio();
         energia = 10;
