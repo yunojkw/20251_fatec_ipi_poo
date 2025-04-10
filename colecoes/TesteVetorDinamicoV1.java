@@ -5,8 +5,14 @@ public class TesteVetorDinamicoV1 {
     var gerador = new Random();
     var v = new VetorDinamico();
     while(true){
-      var numero = gerador.nextInt(1, 7);//[1, 7)
-      v.adicionar(numero);
+      var oQueFazer = gerador.nextDouble();
+      if(oQueFazer <= 0.5){
+        var numero = gerador.nextInt(1, 7);//[1, 7)
+        v.adicionar(numero);
+      }
+      else{
+        v.remover();
+      }
       System.out.println(v);
       System.out.println("**************************");
       Thread.sleep(5000);
