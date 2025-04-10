@@ -6,7 +6,7 @@ public class TesteVetorDinamicoV1 {
     var v = new VetorDinamico();
     while(true){
       var oQueFazer = gerador.nextDouble();
-      if(oQueFazer <= 0.5){
+      if(oQueFazer <= 0.6){
         var numero = gerador.nextInt(1, 7);//[1, 7)
         v.adicionar(numero);
       }
